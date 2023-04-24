@@ -2,7 +2,7 @@ import Image from 'next/image';
 import { Inter } from 'next/font/google';
 
 // Components
-import Paragraph from '@/app/components/ui/Paragraph';
+import Paragraph from '@/components/ui/Paragraph';
 
 const inter = Inter({ subsets: ['latin'] });
 
