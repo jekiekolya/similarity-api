@@ -10,6 +10,7 @@ import { cn } from '@/lib/utils';
 // Components
 import Providers from '@/components/Providers';
 import { Toaster } from '@/components/ui/Toast';
+import Navbar from '@/components/Navbar';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -25,7 +26,8 @@ export default function RootLayout({
     >
       <body className="min-h-screen bg-slate-50 dark:bg-slate-900 antialiased">
         <Providers>
-          {children}
+          <Navbar />
+          <main>{children}</main>
           <Toaster position="bottom-right" />
         </Providers>
 
