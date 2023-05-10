@@ -2,6 +2,8 @@ import type { Metadata } from 'next';
 import { getServerSession } from 'next-auth';
 import { authOptions } from '@/lib/auth';
 import { db } from '@/lib/db';
+import RequestApiKey from '@/components/ui/RequestApiKey';
+import ApiDashboard from '@/components/ui/ApiDashboard';
 
 export const metadata: Metadata = {
   title: 'Similarity API | Dashboard',
@@ -18,7 +20,7 @@ const page = async () => {
 
   return (
     <div className="max-w-7xl mx-auto my-16">
-      {/* {apiKey ? <ApiDashboard /> : <RequestApiKey />} */}
+      {apiKey ? <ApiDashboard /> : <RequestApiKey />}
     </div>
   );
 };
