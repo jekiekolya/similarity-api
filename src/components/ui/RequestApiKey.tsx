@@ -30,7 +30,7 @@ const RequestApiKey: FC = () => {
 
       toast({
         title: 'Error',
-        message: 'Something went wrong',
+        message: 'Something went wrong!',
         type: 'error',
       });
     } finally {
